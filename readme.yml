@@ -24,3 +24,12 @@ readme:
           name: widget_include
           description: |
             Include this widget in html head section.
+    -
+      name: Report
+      description: |
+        ````
+        SELECT * 
+        FROM page_counter_v2_page 
+        where request_uri like '%/page_trigger/%'
+        order by created_at desc;
+        ````

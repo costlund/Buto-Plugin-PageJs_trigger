@@ -25,3 +25,12 @@
 
 <p>Include this widget in html head section.</p>
 
+<a name="key_1"></a>
+
+## Report
+
+<pre><code>SELECT * 
+FROM page_counter_v2_page 
+where request_uri like '%/page_trigger/%'
+order by created_at desc;</code></pre>
+
