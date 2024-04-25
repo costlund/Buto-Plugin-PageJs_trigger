@@ -1,0 +1,26 @@
+readme:
+  name: Buto-Plugin-PageJs_trigger
+  description: |
+    Log with javascript when user click a button.
+    - Include js in html head section
+    - Add a page to theme page folder named as page_trigger.yml.
+    - Then use plugin page/counter_v2 to log request to db (see this plugin documentation).
+    - Then data in db can be used to create click reports.
+
+    ````
+    onclick: PluginPageJs_trigger.trigger('follow_us_facebook');
+    ````
+    A request is sent to this page.
+    ````
+    /d/page_trigger/tag/follow_us_facebook
+
+    "d" is theme settings default_class.
+    ````
+  item:
+    -
+      name: Widgets
+      item:
+        -
+          name: widget_include
+          description: |
+            Include this widget in html head section.
